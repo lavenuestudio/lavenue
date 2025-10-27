@@ -10,7 +10,6 @@ function App() {
           <img src={lavenueLogo} className="logo lavenue" alt="L'Avenue logo" />
         </a>
       </div>
-      {/* <h1>L'Avenue Studio</h1> */}
     </>
   )
 }
