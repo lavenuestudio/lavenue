@@ -7,10 +7,10 @@ function App() {
     <>
       <div>
         <a href="#" target="_blank">
-          <img src={lavenueLogo} className="logo" alt="L'Avenue logo" />
+          <img src={lavenueLogo} className="logo lavenue" alt="L'Avenue logo" />
         </a>
       </div>
-      <h1>L'Avenue Studio</h1>
+      {/* <h1>L'Avenue Studio</h1> */}
     </>
   )
 }
