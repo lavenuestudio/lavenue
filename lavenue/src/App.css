@@ -11,8 +11,8 @@
 }
 
 .logo {
-  height: 6em;
-  padding: 1em;
+  height: 6rem;
+  padding: 1rem;
   will-change: filter;
   transition: filter 300ms, height 300ms;
   filter: contrast(0.5);
@@ -20,7 +20,7 @@
 
 .logo.lavenue:hover {
   filter: drop-shadow(0 0 0.5em var(--light-red));
-  height: 6.2em;
+  height: 6.5em;
 }
 
 @keyframes logo-spin {
