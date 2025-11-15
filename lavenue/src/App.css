@@ -10,17 +10,19 @@
   text-align: center;
 }
 
+.app-title{
+  text-align: -webkit-center;
+}
+
 .logo {
   height: 6rem;
   padding: 1rem;
   will-change: filter;
   transition: filter 300ms, height 300ms;
-  filter: contrast(0.5);
 }
 
 .logo.lavenue:hover {
-  filter: drop-shadow(0 0 0.5em var(--light-red));
-  height: 6.5em;
+  filter: drop-shadow(0 0 0.5em var(--light-purple));
 }
 
 @keyframes logo-spin {
@@ -156,4 +158,21 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+canvas {
+    place-self: center;
+}
+
+.project-container{
+  padding: 2rem;
+}
+
+.project-container .project img{
+    background: var(--white);
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+p.project-description {
+    margin: 1rem 0rem 0rem 0rem;
 }
