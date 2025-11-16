@@ -3,8 +3,8 @@ import FuzzyText from "../components/FuzzyText";
 export default function Project({ project }) {
   const { id, name, description, image } = project;
   return (
-    <div id={id} className="project">
-      <FuzzyText
+    <section id={id} className="project">
+      {/* <FuzzyText
         baseIntensity={0.1}
         hoverIntensity={2}
         enableHover={true}
@@ -14,8 +14,8 @@ export default function Project({ project }) {
       >
         {name}
       </FuzzyText>
-      <p className="project-description">{description}</p>
+      <p className="project-description">{description}</p> */}
       <img src={`/images/${image}`} />
-    </div>
+    </section>
   );
 }
