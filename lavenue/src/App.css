@@ -12,6 +12,7 @@
 
 .app-title{
   text-align: -webkit-center;
+      padding: 0 2rem 2rem;
 }
 
 .logo {
@@ -130,10 +131,12 @@ canvas {
 }
 
 .project-container {
-    padding: 2rem;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+  display: flex;
+  justify-content: center;  /* centra en horizontal */
+  align-items: center;      /* centra en vertical (si quieres) */
+  flex-wrap: wrap;          /* que puedan saltar de línea */
+  gap: 2rem;                /* separación entre proyectos */
+  padding: 2rem;
 }
 
 p.project-description {
@@ -141,11 +144,31 @@ p.project-description {
 }
 
 .project {
-  flex: 0 0 30%;
+  flex: 0 1 calc(33.333% - 2rem);
   display: flex;
   justify-content: center;
 }
+
 .project img {
   max-width: 100%;
   height: auto;
+  display: block;
+}
+
+/* Tablet: 2 por fila */
+@media (max-width: 1024px) {
+  .project {
+    flex: 0 1 calc(50% - 2rem);
+  }
+}
+
+/* Móvil: 1 por fila */
+@media (max-width: 600px) {
+  .project {
+    flex: 0 1 100%;
+  }
+
+  .project-container {
+    min-height: auto; /* opcional, para que no quede tan alta la vista en móvil */
+  }
 }
