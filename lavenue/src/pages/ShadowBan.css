@@ -1,0 +1,42 @@
+.pants-wrapper {
+    position: relative;
+    width: min(80vw, 500px);
+    margin: 0 auto;
+
+    .pants-img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .patches {
+        position: absolute;
+        z-index: 2;
+    }
+    .pants-overlay-anabelle {
+        width: 12%;
+        top: 13%;
+        left: 41%;
+        transform: rotate(10deg);
+    }
+
+    .pants-overlay-shoot {
+        width: 12%;
+        top: 23%;
+        left: 21%;
+        transform: rotate(14deg);
+    }
+
+    .pants-overlay-spider {
+        width: 13%;
+        top: 29%;
+        left: 36%;
+        transform: rotate(10deg);
+    }
+
+    .pants-overlay-lavenuePatch {
+        width: 25%;
+        top: 47%;
+        left: 16%;
+        transform: rotate(17deg);
+    }
+}
