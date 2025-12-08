@@ -1,6 +1,9 @@
 import "./ShadowBan.css";
+import FuzzyText from "../components/FuzzyText";
+
 export default function ShadowBanPage() {
   return (
+    <div className="pants-section">
       <div className="pants-wrapper">
         <img className="patches pants-overlay-anabelle" src={`/images/parches/anabelle.webp`} />
         <img className="patches pants-overlay-shoot" src={`/images/parches/shoot.webp`} />
@@ -10,5 +13,13 @@ export default function ShadowBanPage() {
         <img className="patches pants-overlay-payaso1" src={`/images/parches/payaso1.webp`} />
         <img className="pants-img" src={`/images/parches/pants.webp`} />
       </div>
+      <div className="pants-description">
+        <h2>Shadow Ban</h2>
+        <p>
+          Aquí va la descripción del pantalón, historia del drop, materiales, etc.
+          Todo este texto quedará alineado al lado del pantalón.
+        </p>
+      </div>
+    </div>
   );
 }
