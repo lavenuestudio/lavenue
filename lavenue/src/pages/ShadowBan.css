@@ -8,15 +8,27 @@
         width: 100%;
         height: auto;
     }
+
     .patches {
         position: absolute;
         z-index: 2;
+
+        &:hover {
+            cursor: pointer;
+            justify-self: center;
+            z-index: 99;
+            transform: scale(3) rotate(2deg);
+            transition: transform 0.3s ease, z-index 0.1s;
+        }
     }
+
     .pants-overlay-anabelle {
         width: 12%;
         top: 13%;
         left: 41%;
         transform: rotate(10deg);
+        transition: transform 0.3s ease, z-index 0.3s;
+        z-index: 4;
     }
 
     .pants-overlay-shoot {
@@ -24,6 +36,8 @@
         top: 23%;
         left: 21%;
         transform: rotate(14deg);
+        transition: transform 0.3s ease, z-index 0.3s;
+        z-index: 4;
     }
 
     .pants-overlay-spider {
@@ -31,6 +45,8 @@
         top: 29%;
         left: 36%;
         transform: rotate(10deg);
+        transition: transform 0.3s ease, z-index 0.3s;
+        z-index: 4;
     }
 
     .pants-overlay-lavenuePatch {
@@ -38,5 +54,37 @@
         top: 47%;
         left: 16%;
         transform: rotate(17deg);
+        transition: transform 0.3s ease, z-index 0.3s;
+        z-index: 4;
+    }
+
+    .pants-overlay-colum {
+        width: 22%;
+        top: 30%;
+        left: 66%;
+        transform: rotate(0deg);
+        transition: transform 0.3s ease, z-index 0.3s;
+        z-index: 4;
+    }
+
+    .pants-overlay-payaso1 {
+        width: 19%;
+        top: 17%;
+        left: 68%;
+        transform: rotate(357deg);
+        transition: transform 0.3s ease, z-index 0.3s;
+        z-index: 4;
+    }
+
+    &:has(.patches:hover) .pants-img {
+        filter: blur(5px);
+    }
+
+    &:has(.patches:hover) .patches:not(:hover) {
+        filter: blur(4px);
+    }
+
+    &:has(.patches:hover) .patches:hover {
+        filter: none;
     }
 }
