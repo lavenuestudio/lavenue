@@ -30,6 +30,42 @@
             }
         }
 
+        .pants-overlay-woman {
+            width: 16%;
+            top: 42%;
+            left: 54%;
+            transform: rotate(0deg);
+            transition: transform 0.3s ease, z-index 0.3s;
+            z-index: 4;
+        }
+
+        .pants-overlay-chair {
+            width: 13%;
+            top: 28%;
+            left: 35%;
+            transform: rotate(0deg);
+            transition: transform 0.3s ease, z-index 0.3s;
+            z-index: 4;
+        }
+
+        .pants-overlay-lavenuePatch2 {
+            width: 18%;
+            top: 20%;
+            left: 46%;
+            transform: rotate(7deg);
+            transition: transform 0.3s ease, z-index 0.3s;
+            z-index: 4;
+        }
+
+        .pants-overlay-payaso3 {
+            width: 18%;
+            top: 28%;
+            left: 58%;
+            transform: rotate(7deg);
+            transition: transform 0.3s ease, z-index 0.3s;
+            z-index: 4;
+        }
+
         .pants-overlay-anabelle {
             width: 12%;
             top: 13%;
@@ -97,6 +133,14 @@
         }
     }
 
+    .tshirt-wrapper,
+    .jersey-wrapper {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
     @media (max-width: 768px) {
         .pants-section {
             flex-direction: column;
@@ -111,4 +155,9 @@
 
     .swiper {
         width: min(100%);
+    }
+
+    img.marquee-image {
+        width: 10vh;
+        margin: 1rem;
     }
