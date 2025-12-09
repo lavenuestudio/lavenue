@@ -6,6 +6,9 @@
         margin: 0 auto;
     }
 
+    :has(.patches:hover) .pants-description {
+        filter: blur(5px);
+    }
     .pants-wrapper {
         position: relative;
         width: min(80%);
