@@ -51,8 +51,12 @@ export const dbShadowBan: shadowBanDataPants[] = [
     image: "spider.webp",
   },
   {
-    id: "lavenuePatch",
-    image: "lavenuePatch.webp",
+    id: "woman",
+    image: "woman.webp",
+  },
+  {
+    id: "chair",
+    image: "chair.webp",
   },
   {
     id: "colum",
