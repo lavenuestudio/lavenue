@@ -3,39 +3,34 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import type { shadowBanDataPants } from "../data/db"; // ajusta la ruta
+import type { shadowBanDataJersey } from "../data/db"; 
 
-export default function ShadowBanPage() {
+type ShadowBanProps = {
+  shadowBanDataPants: shadowBanDataPants[];
+  shadowBanDataJersey: shadowBanDataJersey[];
+};
+
+export default function ShadowBan({ shadowBanDataPants, shadowBanDataJersey }: ShadowBanProps) {
   return (
     <div>
       <div className="pants-section">
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
           <SwiperSlide>
             <div className="pants-wrapper">
+              {shadowBanDataPants.map((patch) => (
+                <img
+                  key={patch.id}
+                  className={`patches pants-overlay-${patch.id}`}
+                  src={`/images/parches/${patch.image}`}
+                  alt={patch.id}
+                />
+              ))}
               <img
-                className="patches pants-overlay-anabelle"
-                src={`/images/parches/anabelle.webp`}
+                className="pants-img"
+                src={`/images/parches/pants.webp`}
+                alt="Pantalón Shadow Ban"
               />
-              <img
-                className="patches pants-overlay-shoot"
-                src={`/images/parches/shoot.webp`}
-              />
-              <img
-                className="patches pants-overlay-spider"
-                src={`/images/parches/spider.webp`}
-              />
-              <img
-                className="patches pants-overlay-lavenuePatch"
-                src={`/images/parches/lavenuePatch.webp`}
-              />
-              <img
-                className="patches pants-overlay-colum"
-                src={`/images/parches/colum.webp`}
-              />
-              <img
-                className="patches pants-overlay-payaso1"
-                src={`/images/parches/payaso1.webp`}
-              />
-              <img className="pants-img" src={`/images/parches/pants.webp`} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -48,22 +43,14 @@ export default function ShadowBanPage() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="pants-wrapper">
-              <img
-                className="patches pants-overlay-woman"
-                src={`/images/parches/woman.webp`}
-              />
-              <img
-                className="patches pants-overlay-lavenuePatch2"
-                src={`/images/parches/lavenuePatch2.webp`}
-              />
-              <img
-                className="patches pants-overlay-payaso3"
-                src={`/images/parches/payaso3.webp`}
-              />
-              <img
-                className="patches pants-overlay-chair"
-                src={`/images/parches/chair.webp`}
-              />
+              {shadowBanDataJersey.map((patch) => (
+                <img
+                  key={patch.id}
+                  className={`patches pants-overlay-${patch.id}`}
+                  src={`/images/parches/${patch.image}`}
+                  alt={patch.id}
+                />
+              ))}
               <img className="pants-img" src={`/images/parches/jersey.webp`} />
             </div>
           </SwiperSlide>
