@@ -41,19 +41,6 @@ export default function ShadowBan({ shadowBanDataPants, shadowBanDataJersey }: S
               />
             </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <div className="pants-wrapper">
-              {shadowBanDataJersey.map((patch) => (
-                <img
-                  key={patch.id}
-                  className={`patches pants-overlay-${patch.id}`}
-                  src={`/images/parches/${patch.image}`}
-                  alt={patch.id}
-                />
-              ))}
-              <img className="pants-img" src={`/images/parches/jersey.webp`} />
-            </div>
-          </SwiperSlide>
         </Swiper>
         <div className="pants-description">
           <h2>Shadow Ban</h2>
