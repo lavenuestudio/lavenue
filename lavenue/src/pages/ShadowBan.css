@@ -17,6 +17,7 @@
         .pants-img {
             display: block;
             width: 100%;
+            min-width: 100%;
             height: auto;
         }
 
@@ -32,6 +33,7 @@
                 transition: transform 0.3s ease, z-index 0.1s;
             }
         }
+
 
         .pants-overlay-woman {
             width: 21%;
@@ -164,3 +166,16 @@
         width: 10vh;
         margin: 1rem;
     }
+
+            
+    .pants-description {
+        max-width: 25rem;
+        padding: 1rem;
+    }
+
+    .clown_text {
+        text-decoration: underline;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    

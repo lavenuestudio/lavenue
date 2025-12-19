@@ -45,8 +45,11 @@ export default function ShadowBan({ shadowBanDataPants, shadowBanDataJersey }: S
         <div className="pants-description">
           <h2>Shadow Ban</h2>
           <p>
-            Aquí va la descripción del pantalón, historia del drop, materiales,
-            etc. Todo este texto quedará alineado al lado del pantalón.
+            Una de las imagenes del pantalón ocasionó hace un par de años el título que da nombre a esta colección <b>"Shadow Ban"</b>. <br />
+            Para el que no lo sepa, un Shadow Ban en redes sociales se refiere a cuando por subir algo fuera de lugar/tono 
+            se te cancela de forma invisible a modo que tus publicaciones nuevas no se muestran a tanta gente como haría normalmente o tu cuenta no se recomienda durante un tiempo. <br />
+            En este caso, fue la imagen de un payaso con una persona colgada de las piernas la cual se usaba en este grupo de forma bastante habitual 
+            <br /> (se ha censurado en los parches lo maximo posible para evitar problemas).
           </p>
         </div>
       </div>
