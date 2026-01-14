@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <HashRouter basename={import.meta.env.BASE_URL}>
+    <HashRouter>
       <div className="app-title">
         <span >
            <Link to="/">
