@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper-bundle.css';
 import { Pagination } from "swiper/modules";
 import type { shadowBanDataPants } from "../data/db"; // ajusta la ruta
-import type { shadowBanDataJersey } from "../data/db"; 
 
 type ShadowBanProps = {
   shadowBanDataPants: shadowBanDataPants[];
