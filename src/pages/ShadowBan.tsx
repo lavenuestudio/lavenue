@@ -7,7 +7,6 @@ import type { shadowBanDataJersey } from "../data/db";
 
 type ShadowBanProps = {
   shadowBanDataPants: shadowBanDataPants[];
-  shadowBanDataJersey: shadowBanDataJersey[];
 };
 
 export default function ShadowBan({ shadowBanDataPants }: ShadowBanProps) {
