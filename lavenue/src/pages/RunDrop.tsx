@@ -1,7 +1,6 @@
 import "./ShadowBan.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
+import 'swiper/swiper-bundle.css';
 import { Pagination } from "swiper/modules";
 import type { shadowBanDataPants } from "../data/db"; // ajusta la ruta
 import type { shadowBanDataJersey } from "../data/db"; 
@@ -11,7 +10,7 @@ type ShadowBanProps = {
   shadowBanDataJersey: shadowBanDataJersey[];
 };
 
-export default function RunDrop({ shadowBanDataPants, shadowBanDataJersey }: ShadowBanProps) {
+export default function RunDrop({ shadowBanDataPants }: ShadowBanProps) {
   return (
     <div>
       <div className="pants-section">

@@ -6,7 +6,7 @@ type ProjectProps = {
 };
 
 export default function Project({ project, onClick }: ProjectProps) {
-  const { id, name, description, image } = project;
+  const { id, name, image } = project;
   return (
     <section id={id} className="project">
       <img onClick={onClick} src={`/images/${image}`} />

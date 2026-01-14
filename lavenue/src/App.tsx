@@ -1,7 +1,7 @@
 import { Routes, Route} from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ShadowBan from "./pages/ShadowBan";
-import RunDrop from "./pages/runDrop";
+import RunDrop from "./pages/RunDrop";
 import { dbShadowBan } from "./data/db"
 import { dbShadowBanJersey } from "./data/db"
 
