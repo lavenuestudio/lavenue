@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App.tsx";
 import Noise from "./components/Noise";
@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter basename="/lavenue">
+    <HashRouter basename={import.meta.env.BASE_URL}>
       <div className="app-title">
         <span >
            <Link to="/">
@@ -29,6 +29,6 @@ createRoot(document.getElementById("root")!).render(
         patternRefreshInterval={2}
         patternAlpha={10}
       />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );
