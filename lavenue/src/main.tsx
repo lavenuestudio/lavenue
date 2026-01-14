@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/lavenue">
       <div className="app-title">
         <span >
            <Link to="/">
