@@ -6,6 +6,9 @@
         margin: 0 auto;
     }
 
+    :has(.patches:hover) .pants-description {
+        filter: blur(5px);
+    }
     .pants-wrapper {
         position: relative;
         width: min(80%);
@@ -14,6 +17,7 @@
         .pants-img {
             display: block;
             width: 100%;
+            min-width: 100%;
             height: auto;
         }
 
@@ -28,6 +32,43 @@
                 transform: scale(3) rotate(2deg);
                 transition: transform 0.3s ease, z-index 0.1s;
             }
+        }
+
+
+        .pants-overlay-woman {
+            width: 21%;
+            top: 58%;
+            left: 13%;
+            transform: rotate(10deg);
+            transition: transform 0.3s ease, z-index 0.3s;
+            z-index: 4;
+        }
+
+        .pants-overlay-chair {
+            width: 15%;
+            top: 59%;
+            left: 70%;
+            transform: rotate(353deg);
+            transition: transform 0.3s ease, z-index 0.3s;
+            z-index: 4;
+        }
+
+        .pants-overlay-lavenuePatch2 {
+            width: 18%;
+            top: 20%;
+            left: 46%;
+            transform: rotate(7deg);
+            transition: transform 0.3s ease, z-index 0.3s;
+            z-index: 4;
+        }
+
+        .pants-overlay-payaso3 {
+            width: 18%;
+            top: 28%;
+            left: 58%;
+            transform: rotate(7deg);
+            transition: transform 0.3s ease, z-index 0.3s;
+            z-index: 4;
         }
 
         .pants-overlay-anabelle {
@@ -97,15 +138,44 @@
         }
     }
 
+    .tshirt-wrapper,
+    .jersey-wrapper {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
     @media (max-width: 768px) {
         .pants-section {
             flex-direction: column;
             align-items: center;
             text-align: center;
-            /* opcional */
         }
 
         .pants-description {
             max-width: 100%;
         }
     }
+
+    .swiper {
+        width: min(100%);
+    }
+
+    img.marquee-image {
+        width: 10vh;
+        margin: 1rem;
+    }
+
+            
+    .pants-description {
+        max-width: 25rem;
+        padding: 1rem;
+    }
+
+    .clown_text {
+        text-decoration: underline;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    

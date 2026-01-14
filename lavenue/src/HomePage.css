@@ -138,6 +138,7 @@ canvas {
   flex-wrap: wrap;          /* que puedan saltar de línea */
   gap: 2rem;                /* separación entre proyectos */
   padding: 2rem;
+  flex-direction: row-reverse;
 }
 
 p.project-description {
@@ -146,7 +147,7 @@ p.project-description {
 
 .project {
   flex: 0 1 calc(33.333% - 2rem);
-  display: flex;
+  text-align: -webkit-center;
   justify-content: center;
   &:hover{
     cursor: pointer;
@@ -176,4 +177,8 @@ p.project-description {
   .project-container {
     min-height: auto; /* opcional, para que no quede tan alta la vista en móvil */
   }
+}
+
+.subtitle_homepage{
+  padding: 1rem;
 }
