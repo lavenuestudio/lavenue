@@ -19,13 +19,13 @@ export default function RunDrop({ shadowBanDataPants }: ShadowBanProps) {
                 <img
                   key={patch.id}
                   className={`patches pants-overlay-${patch.id}`}
-                  src={`/images/parches/${patch.image}`}
+                  src={`${import.meta.env.BASE_URL}images/parches/${patch.image}`}
                   alt={patch.id}
                 />
               ))}
               <img
                 className="pants-img"
-                src={`/images/parches/pants.webp`}
+                src={`${import.meta.env.BASE_URL}images/parches/pants.webp`}
                 alt="Pantalón Shadow Ban"
               />
             </div>
@@ -34,7 +34,7 @@ export default function RunDrop({ shadowBanDataPants }: ShadowBanProps) {
             <div className="pants-wrapper">
               <img
                 className="pants-img"
-                src={`/images/parches/camiseta.webp`}
+                src={`${import.meta.env.BASE_URL}images/parches/camiseta.webp`}
               />
             </div>
           </SwiperSlide>
