@@ -149,6 +149,7 @@ p.project-description {
   flex: 0 1 calc(33.333% - 2rem);
   text-align: -webkit-center;
   justify-content: center;
+  position: relative;
   &:hover{
     cursor: pointer;
   }
@@ -159,6 +160,22 @@ p.project-description {
   height: auto;
   display: block;
   border-radius: 1.5rem;
+}
+
+.project video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 0em);
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.project p {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
 }
 
 /* Tablet: 2 por fila */
