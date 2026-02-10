@@ -3,6 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { Pagination } from "swiper/modules";
 import type { ShadowBanData } from "@/types/ShadowBanTypes";
+import { useState } from "react";
+import "../components/Spinner/Spinner.css";
+import Spinner from "@/components/Spinner/Spinner";
 
 type ShadowBanProps = {
   shadowBanDataPants: ShadowBanData[];
@@ -13,9 +16,12 @@ export default function ShadowBan({
   shadowBanDataPants,
   shadowBanDataPants2,
 }: ShadowBanProps) {
+  const [pantsLoaded, setPantsLoaded] = useState(false);
+
   return (
     <div>
       <div className="pants-section">
+        {!pantsLoaded && <Spinner />}
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
           <SwiperSlide>
             <div className="pants-wrapper">
@@ -31,6 +37,7 @@ export default function ShadowBan({
                 className="pants-img"
                 src={`${import.meta.env.BASE_URL}images/parches/pants.webp`}
                 alt="Pantalón Shadow Ban"
+                onLoad={() => setPantsLoaded(true)}
               />
             </div>
           </SwiperSlide>
