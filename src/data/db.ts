@@ -1,19 +1,5 @@
-export type ProjectData = {
-  id: string;
-  name: string;
-  image: string;
-  description: string;
-};
-
-export type shadowBanDataPants = {
-  id: string;
-  image: string;
-};
-
-export type shadowBanDataJersey = {
-  id: string;
-  image: string;
-};
+import type { ProjectData } from "@/types/ProjectTypes";
+import type { ShadowBanData } from "@/types/ShadowBanTypes";
 
 export const db: ProjectData[] = [
   {
@@ -37,7 +23,7 @@ export const db: ProjectData[] = [
   },
 ];
 
-export const dbShadowBan: shadowBanDataPants[] = [
+export const pantalonShadowBan: ShadowBanData[] = [
   {
     id: "anabelle",
     image: "anabelle.webp",
@@ -68,21 +54,33 @@ export const dbShadowBan: shadowBanDataPants[] = [
   },
 ];
 
-export const dbShadowBanJersey: shadowBanDataJersey[] = [
+export const pantalonShadowBan2: ShadowBanData[] = [
   {
-    id: "woman",
-    image: "woman.webp",
+    id: "anabelle",
+    image: "anabelle.webp",
   },
   {
-    id: "lavenuePatch2",
-    image: "lavenuePatch2.webp",
+    id: "alien",
+    image: "alien.webp",
+  },
+  {
+    id: "spider",
+    image: "spider.webp",
   },
   {
     id: "payaso3",
     image: "payaso3.webp",
   },
   {
-    id: "chair",
-    image: "chair.webp",
+    id: "payaso2",
+    image: "payaso2.webp",
+  },
+  {
+    id: "shoot",
+    image: "shoot.webp",
+  },
+  {
+    id: "payaso1",
+    image: "payaso1.webp",
   },
 ];

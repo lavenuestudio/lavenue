@@ -1,8 +1,8 @@
-import type { ProjectData } from "../data/db";
+import type { ProjectData } from "@/types/ProjectTypes";
 
 type ProjectProps = {
   project: ProjectData;
-   onClick: () => void; // 👈 añadimos esta prop
+   onClick: () => void;
 };
 
 export default function Project({ project, onClick }: ProjectProps) {

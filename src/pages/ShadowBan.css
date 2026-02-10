@@ -9,6 +9,7 @@
     :has(.patches:hover) .pants-description {
         filter: blur(5px);
     }
+
     .pants-wrapper {
         position: relative;
         width: min(80%);
@@ -125,6 +126,33 @@
             z-index: 4;
         }
 
+        .pants-overlay-payaso2 {
+            width: 14%;
+            top: 31%;
+            left: 68%;
+            transform: rotate(357deg);
+            transition: transform 0.3s ease, z-index 0.3s;
+            z-index: 4;
+        }
+
+        .pants-overlay-payaso3 {
+            width: 19%;
+            top: 65%;
+            left: 12%;
+            transform: rotate(376deg);
+            transition: transform 0.3s ease, z-index 0.3s;
+            z-index: 4;
+        }
+
+        .pants-overlay-alien {
+            width: 19%;
+            top: 66%;
+            left: 68%;
+            transform: rotate(357deg);
+            transition: transform 0.3s ease, z-index 0.3s;
+            z-index: 4;
+        }
+
         &:has(.patches:hover) .pants-img {
             filter: blur(5px);
         }
@@ -167,7 +195,7 @@
         margin: 1rem;
     }
 
-            
+
     .pants-description {
         max-width: 25rem;
         padding: 1rem;
@@ -178,4 +206,3 @@
         font-weight: 500;
         cursor: pointer;
     }
-    
