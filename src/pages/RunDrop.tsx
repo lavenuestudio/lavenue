@@ -2,10 +2,11 @@ import "./ShadowBan.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper-bundle.css';
 import { Pagination } from "swiper/modules";
-import type { shadowBanDataPants } from "../data/db"; // ajusta la ruta
+import type { ShadowBanData } from "@/types/ShadowBanTypes";
+
 
 type ShadowBanProps = {
-  shadowBanDataPants: shadowBanDataPants[];
+  shadowBanDataPants: ShadowBanData[];
 };
 
 export default function RunDrop({ shadowBanDataPants }: ShadowBanProps) {

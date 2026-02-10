@@ -1,8 +1,10 @@
 import "../HomePage.css";
 import { useEffect, useState } from "react";
-import { db, type ProjectData } from '../data/db.js'
+import { db } from '../data/db.js'
 import Project from "../components/Project.jsx";
 import { useNavigate } from "react-router-dom";
+import type { ProjectData } from "@/types/ProjectTypes.js";
+
 
 function HomePage() {
 const [data, setData] = useState<ProjectData[]>([]);
